@@ -1,0 +1,10 @@
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\bin\Debug\WebHtmlDownloader.exe.config
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\bin\Debug\WebHtmlDownloader.exe
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\bin\Debug\WebHtmlDownloader.pdb
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\obj\Debug\WebHtmlDownloader.csprojResolveAssemblyReference.cache
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\obj\Debug\WebHtmlDownloader.Form1.resources
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\obj\Debug\WebHtmlDownloader.Properties.Resources.resources
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\obj\Debug\WebHtmlDownloader.csproj.GenerateResource.Cache
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\obj\Debug\WebHtmlDownloader.csproj.CoreCompileInputs.cache
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\obj\Debug\WebHtmlDownloader.exe
+C:\Users\fsola\Source\Repos\WebHtmlDownloader\WebHtmlDownloader\obj\Debug\WebHtmlDownloader.pdb
