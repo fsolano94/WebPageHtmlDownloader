@@ -33,6 +33,7 @@
             this.GetContentButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
             this.ContentTextBox = new System.Windows.Forms.RichTextBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // urlTextBox
@@ -81,11 +82,20 @@
             this.ContentTextBox.Text = "Content";
             this.ContentTextBox.TextChanged += new System.EventHandler(this.ContentTextBox_TextChanged);
             // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(253, 388);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(276, 23);
+            this.progressBar.Step = 100;
+            this.progressBar.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(898, 516);
+            this.Controls.Add(this.progressBar);
             this.Controls.Add(this.ContentTextBox);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.GetContentButton);
@@ -105,6 +115,7 @@
         private System.Windows.Forms.Button GetContentButton;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.RichTextBox ContentTextBox;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
 
