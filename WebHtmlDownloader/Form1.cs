@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,9 +30,12 @@ namespace WebHtmlDownloader
         {
             using (var saveFileDialog = new SaveFileDialog())
             {
-                if(saveFileDialog.ShowDialog() == DialogResult.OK)
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    
+                    using (var binaryWriter = new BinaryWriter(File.Create(saveFileDialog.FileName)))
+                    {
+                        binaryWriter.Write(ContentTextBox.Text);
+                    }
                 }
             }
         }
