@@ -17,5 +17,28 @@ namespace WebHtmlDownloader
             InitializeComponent();
         }
 
+        private void GetContentButton_Click(object sender, EventArgs e)
+        {
+            using (var webClient = new System.Net.WebClient())
+            {
+                ContentTextBox.Text = webClient.DownloadString(urlTextBox.Text);
+            }
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            using (var saveFileDialog = new SaveFileDialog())
+            {
+                if(saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    
+                }
+            }
+        }
+
+        private void ContentTextBox_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }
+

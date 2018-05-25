@@ -28,67 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.urlTextBox = new System.Windows.Forms.TextBox();
+            this.urlButton = new System.Windows.Forms.Button();
+            this.GetContentButton = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.ContentTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // urlTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(253, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 20);
-            this.textBox1.TabIndex = 0;
+            this.urlTextBox.Location = new System.Drawing.Point(253, 21);
+            this.urlTextBox.Name = "urlTextBox";
+            this.urlTextBox.Size = new System.Drawing.Size(276, 20);
+            this.urlTextBox.TabIndex = 0;
+            this.urlTextBox.Text = "Enter Url here";
             // 
-            // button1
+            // urlButton
             // 
-            this.button1.Location = new System.Drawing.Point(160, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "url";
-            this.button1.UseVisualStyleBackColor = true;
+            this.urlButton.Location = new System.Drawing.Point(160, 18);
+            this.urlButton.Name = "urlButton";
+            this.urlButton.Size = new System.Drawing.Size(75, 23);
+            this.urlButton.TabIndex = 1;
+            this.urlButton.Text = "url";
+            this.urlButton.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // GetContentButton
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "Content"});
-            this.listBox1.Location = new System.Drawing.Point(253, 78);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(276, 264);
-            this.listBox1.TabIndex = 2;
+            this.GetContentButton.Location = new System.Drawing.Point(598, 78);
+            this.GetContentButton.Name = "GetContentButton";
+            this.GetContentButton.Size = new System.Drawing.Size(75, 23);
+            this.GetContentButton.TabIndex = 3;
+            this.GetContentButton.Text = "Get Content";
+            this.GetContentButton.UseVisualStyleBackColor = true;
+            this.GetContentButton.Click += new System.EventHandler(this.GetContentButton_Click);
             // 
-            // button2
+            // SaveButton
             // 
-            this.button2.Location = new System.Drawing.Point(598, 78);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Get Content";
-            this.button2.UseVisualStyleBackColor = true;
+            this.SaveButton.Location = new System.Drawing.Point(598, 305);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.TabIndex = 4;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // button3
+            // ContentTextBox
             // 
-            this.button3.Location = new System.Drawing.Point(598, 305);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ContentTextBox.Location = new System.Drawing.Point(253, 78);
+            this.ContentTextBox.Name = "ContentTextBox";
+            this.ContentTextBox.Size = new System.Drawing.Size(276, 250);
+            this.ContentTextBox.TabIndex = 5;
+            this.ContentTextBox.Text = "Content";
+            this.ContentTextBox.TextChanged += new System.EventHandler(this.ContentTextBox_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(898, 516);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ContentTextBox);
+            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.GetContentButton);
+            this.Controls.Add(this.urlButton);
+            this.Controls.Add(this.urlTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -98,11 +100,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox urlTextBox;
+        private System.Windows.Forms.Button urlButton;
+        private System.Windows.Forms.Button GetContentButton;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.RichTextBox ContentTextBox;
     }
 }
 
